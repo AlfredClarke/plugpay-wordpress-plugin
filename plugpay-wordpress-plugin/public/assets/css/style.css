@@ -1,0 +1,14 @@
+/* style.css */
+/* Plugin-specific styles */
+.plugin-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.button-primary {
+    background-color: #0073aa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}

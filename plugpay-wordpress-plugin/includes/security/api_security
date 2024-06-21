@@ -1,0 +1,19 @@
+<?php
+// Secure API communication functions
+
+// Function to make secure API requests using HTTPS
+function plugpay_secure_api_request($url, $data) {
+    // Example: use wp_remote_post() with HTTPS
+    $args = array(
+        'body' => $data,
+        'sslverify' => true
+    );
+    $response = wp_remote_post($url, $args);
+    if (is_wp_error($response)) {
+        // Handle error
+        return false;
+    } else {
+        return wp_remote_retrieve_body($response);
+    }
+}
+?>
